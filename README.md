@@ -25,6 +25,9 @@ serial-flash tcp:192.168.1.123 app.elf
 
 # rp2040_serial_bootloader
 serial-flash /dev/ttyUSB0 app.elf
+
+# rp2040_serial_bootloader with custom baud rate, e.g. 115200
+serial-flash /dev/ttyUSB0:115200 app.elf
 ```
 
 You can also build it without installing:
